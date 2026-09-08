@@ -4,80 +4,108 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Моя сторінка</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
-<header>
-<h1>Марія Семен</h1>
-<nav>
-    <a href="#about">Про мене</a>
-    <a href="#hobbies">Хобі</a>
-    <a href="#gallery">Галарея</a>
-    <a href="#contacts">Контакти</a>
-</nav>
+
+<body class="main-text">
+
+<header class="header">
+    <h1 class="heading main-title">Марія Семен</h1>
+
+    <nav class="nav">
+        <a class="nav-link" href="#about">Про мене</a>
+        <a class="nav-link" href="#hobbies">Хобі</a>
+        <a class="nav-link" href="#gallery">Галерея</a>
+        <a class="nav-link" href="#contacts">Контакти</a>
+    </nav>
 </header>
+
 <main>
-    <section id="about">
-        <img src="Maria.png" alt="Фото Марії">
-    
-        <div>
-            <h2>Про мене</h2>
-            <p>Привіт! Мене звати Марія. Я вивчаю front-end development.</p>
-            <p>Мені подобається вивчати нові технології та створювати веб-сторінки.</p>
-            <p>У вільний час я люблю читати, бігати та подорожувати.</p>
+
+    <section id="about" class="about">
+        <img class="about-image" src="./images/Maria.png" alt="Фото Марії">
+
+        <div class="about-content">
+            <h2 class="heading section-title">Про мене</h2>
+
+            <p id="specific-text" class="about-text">Привіт! Мене звати Марія. Я вивчаю front-end development.</p>
+
+            <p class="about-text">
+                Мені подобається вивчати нові технології та створювати веб-сторінки.
+            </p>
+
+            <p class="about-text">
+                У вільний час я люблю читати, бігати та подорожувати.
+            </p>
         </div>
     </section>
-<section id="hobbies">
-<h2>Мої хобі</h2>
-<ul>
-    <li>
-    <a href="https://www.strava.com" target="_blank">Біг</a>
-    </li>
-    <li>Читання</li>
-    <li>Серфінг</li>
-    <li>Подорожі</li>
-    <li>Навчання</li>
-</ul>
-</section>
-<section id="gallery">
-<h2>Моя Галарея</h2>
-<figure>
-    <img src="serf.jpg" alt="Марія Серфить" title="Серфінг" width="300">
-    <figcaption>Марія на дошці</figcaption>
-</figure>
-<figure>
-    <img src="run.jpg" alt="Марія Бігає" title="Біг" width="300">
-    <figcaption>Марія бігає</figcaption>
-</figure>
-<figure>
-    <img src="book.jpg" alt="Книга" title="Книга" width="300">
-    <figcaption>Марія читає</figcaption>
-</figure>
-</section>
-<section id="contacts">
-<h2>Контакти</h2>
-<form>
-<label for="name">Імʼя</label>
-<input type="text" id="name" name="name" required>
-<br><br>
-<label for="email">Email</label>
-<input type="email" id="email" name="Email" required>
-<br><br>
-<label for="message">Повідомлення</label>
-<textarea id="message" name="message" required></textarea>
-<br><br>
-<button type="submit">Надіслати</button>
-<br><br>
-</form>
-</section>
+
+    <section id="hobbies" class="hobbies">
+        <h2 class="heading section-title">Мої хобі</h2>
+
+        <ul class="hobbies-list">
+            <li class="hobbies-item">
+                <a class="hobbies-link" href="https://www.strava.com" target="_blank">Біг</a>
+            </li>
+            <li class="hobbies-item">Читання</li>
+            <li class="hobbies-item">Серфінг</li>
+            <li class="hobbies-item">Подорожі</li>
+            <li class="hobbies-item">Навчання</li>
+        </ul>
+    </section>
+
+    <section id="gallery" class="gallery">
+        <h2 class="heading section-title">Моя Галерея</h2>
+        <div class="gallery-list">
+
+        <figure class="gallery-item">
+            <img class="gallery-image" src="./images/serf.jpg" alt="Марія Серфить" title="Серфінг">
+            <figcaption class="gallery-caption">Марія на дошці</figcaption>
+        </figure>
+
+        <figure class="gallery-item">
+            <img class="gallery-image" src="./images/run.jpg" alt="Марія Бігає" title="Біг">
+            <figcaption class="gallery-caption">Марія бігає</figcaption>
+        </figure>
+
+        <figure class="gallery-item">
+            <img class="gallery-image" src="./images/book.jpg" alt="Книга" title="Книга">
+            <figcaption class="gallery-caption">Марія читає</figcaption>
+        </figure>
+    </div>
+    </section>
+
+    <section id="contacts" class="contacts">
+        <h2 class="heading section-title">Контакти</h2>
+
+        <form class="contact-form">
+
+            <label class="form-label" for="name">Імʼя</label>
+            <input class="form-input" type="text" id="name" name="name" required>
+
+            <label class="form-label" for="email">Email</label>
+            <input class="form-input" type="email" id="email" name="Email" required>
+
+            <label class="form-label" for="message">Повідомлення</label>
+            <textarea class="form-textarea" id="message" name="message" required></textarea>
+
+            <button class="form-button" type="submit">Надіслати</button>
+
+        </form>
+    </section>
+
 </main>
-<footer>
-<address>
-    <a href="https://instagram.com" target="_blank">Instagram</a>
-    <br><br>
-    <a href="mailto:maria@example.com"> maria@example.com</a>
-</address>
-<p>&copy;2026 Марія Семен</p>
+
+<footer class="footer">
+    <address class="footer-address">
+        <a class="footer-link" href="https://instagram.com" target="_blank">Instagram</a>
+        <a class="footer-link" href="mailto:maria@example.com">maria@example.com</a>
+    </address>
+
+    <p class="footer-text">&copy;2026 Марія Семен</p>
 </footer>
+
 </body>
 </html>
